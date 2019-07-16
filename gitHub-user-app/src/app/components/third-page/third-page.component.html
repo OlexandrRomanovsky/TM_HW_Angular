@@ -1,0 +1,47 @@
+<div class="allItems">
+  <div class="title">
+    <img class="avatar" [src]="user?.avatar_url" alt="avatar" />
+    <h1 class="login">{{ user?.login }}</h1>
+    <a [href]="user?.html_url" target="_blanck">View on GitHub</a>
+  </div>
+  <div class="userInfo">
+    <img
+      class="logoUser"
+      src="https://placeholder.pics/svg/60"
+      alt="logoUser"
+    />
+    <p class="names">{{ user?.name }}</p>
+    <img
+      class="logoClock"
+      src="https://placeholder.pics/svg/60"
+      alt="logoClock"
+    />
+    <p class="date">{{ user?.created_at }}</p>
+    <img
+      class="logLocation"
+      src="https://placeholder.pics/svg/60"
+      alt="logLocation"
+    />
+    <p class="location">{{ user?.location }}</p>
+    <img
+      class="logoCompany"
+      src="https://placeholder.pics/svg/60"
+      alt="logoCompany"
+    />
+    <p class="company">{{ user?.company }}</p>
+    <img
+      class="logoMail"
+      src="https://placeholder.pics/svg/60"
+      alt="logoMail"
+    />
+    <p class="email">{{ user?.email }}</p>
+  </div>
+  <div class="repoBox">
+    <h2 class="titleOfRepos">
+      Repos {{ repositories?.length === 30 ? repLength : repositories?.length }}
+    </h2>
+    <hr />
+    <app-repos class="repos" *ngFor="let repo of repositories" [repo]="repo">
+    </app-repos>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+.userItem {
+  display: flex;
+  justify-content: space-between;
+  border: solid 1px #c7c4c4;
+  border-radius: 10px;
+  margin: 10px 0px 10px 0px;
+  align-items: center;
+  font-family: "Exo 2", sans-serif;
+  box-shadow: 14px 17px 29px -9px rgba(0,0,0,0.75);
+
+  .avatarLogin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .login {
+      font-size: 2em;
+      font-weight: bold;
+    }
+  }
+
+  .avatar {
+    max-width: 10vw;
+    border-radius: 50%;
+    border: solid 1px #c7c4c4;
+    margin: 1vw;
+  }
+
+  .linkInfo {
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+
+    a {
+      margin-top: 10px;
+    }
+  }
+}

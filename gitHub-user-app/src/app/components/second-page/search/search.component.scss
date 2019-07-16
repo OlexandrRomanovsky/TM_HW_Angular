@@ -1,0 +1,28 @@
+.search {
+  font-family: "Exo 2", sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+
+  .searchForm {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    box-sizing: border-box;
+
+    .input {
+      font-size: 16px;
+      border: solid black 1px;
+      width: 56%;
+    }
+
+    .butSubmit {
+      font-size: 20px;
+      border-radius: 6px;
+      background-color: #c7c4c4;
+      border: solid black 1px;
+      width: 40%;
+    }
+  }
+}

@@ -1,0 +1,10 @@
+<div class="userItem">
+  <div class="avatarLogin">
+    <img class="avatar" [src]="userData.avatar_url" alt="avatar" />
+    <p class="login">{{ userData?.login }}</p>
+  </div>
+  <div class="linkInfo">
+    <a [routerLink]="['/search', userData.login]" (click)="activeLink()">View Details</a>
+    <a [href]="userData.html_url" target="_blank">Open on GitHub</a>
+  </div>
+</div>

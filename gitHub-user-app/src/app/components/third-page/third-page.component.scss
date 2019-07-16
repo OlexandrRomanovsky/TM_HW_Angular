@@ -1,0 +1,89 @@
+@mixin styleGrid {
+  border-bottom: solid 1px #c7c4c4;
+  width: 60%;
+}
+
+.allItems {
+  font-family: "Exo 2", sans-serif;
+  border: solid 1px #c7c4c4;
+  border-radius: 3px;
+  margin: 10px 0px 10px 0px;
+
+  .title {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid 1px #c7c4c4;
+
+    .avatar {
+      max-width: 10vw;
+      border-radius: 50%;
+      border: solid 1px #c7c4c4;
+      margin: 1vw;
+    }
+
+    .login {
+      font-size: 2em;
+      font-weight: bold;
+    }
+  }
+  .userInfo {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-auto-rows: 20% 20% 20% 20% 20%;
+    grid-template-areas:
+      "logoUser names"
+      "logoClock date"
+      "logLocation location"
+      "logoCompany company"
+      "logoMail email";
+    margin-left: 6%;
+
+    .logoUser {
+      grid-area: logoUser;
+    }
+    .names {
+      grid-area: names;
+      @include styleGrid;
+    }
+    .logoClock {
+      grid-area: logoClock;
+    }
+    .date {
+      grid-area: date;
+      @include styleGrid;
+    }
+    .logLocation {
+      grid-area: logLocation;
+    }
+    .location {
+      grid-area: location;
+      @include styleGrid;
+    }
+    .logoCompany {
+      grid-area: logoCompany;
+    }
+    .company {
+      grid-area: company;
+      @include styleGrid;
+    }
+    .logoMail {
+      grid-area: logoMail;
+    }
+    .email {
+      grid-area: email;
+      @include styleGrid;
+    }
+  }
+  .repoBox {
+    overflow: hidden;
+
+    .titleOfRepos {
+      margin-left: 10%;
+      width: 60%;
+    }
+    hr {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+<div class="search">
+  <div>Search Users</div>
+  <form
+    class="searchForm"
+    #formPas="ngForm"
+  >
+    <input
+      class="input"
+      name="title"
+      type="text"
+      placeholder="username"
+      [(ngModel)]="inputText"
+    />
+    <button class="butSubmit" (click)="onSearchClick()">Search</button>
+  </form>
+</div>

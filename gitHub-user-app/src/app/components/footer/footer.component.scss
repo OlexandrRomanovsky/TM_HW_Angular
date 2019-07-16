@@ -1,0 +1,12 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #c7c4c4;
+  padding: 20px;
+  font-size: 40px;
+  font-family: "Exo 2", sans-serif;
+
+  .madeBy {
+    margin-left: 6%;
+  }
+}

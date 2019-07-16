@@ -1,0 +1,26 @@
+.head {
+  display: flex;
+  justify-content: space-between;
+  background-color: #c7c4c4;
+  padding: 40px;
+
+  .logo {
+    max-width: 20%;
+    margin-left: 6%;
+  }
+
+  .navBar {
+    font-size: 40px;
+    margin-right: 10%;
+
+    .navLink {
+      text-decoration: none;
+      font-family: "Exo 2", sans-serif;
+      color: black;
+    }
+
+    .active {
+      color: #039be5;
+    }
+  }
+}

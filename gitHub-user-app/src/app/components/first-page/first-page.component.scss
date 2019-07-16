@@ -1,0 +1,27 @@
+.gridPosition {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 10vh 50vh;
+  grid-template-areas:
+    "title title"
+    "logo txt";
+
+  .title {
+    grid-area: title;
+  }
+
+  .logo {
+    grid-area: logo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .txt {
+    grid-area: txt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

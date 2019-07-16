@@ -1,0 +1,14 @@
+<app-search [inputText]="searchName" (usersData)="onSearch($event)"></app-search>
+
+<app-loader *ngIf="isLoading"></app-loader>
+
+<app-user
+  *ngFor="let userData of fetchedUsersData"
+  [userData]="userData"
+></app-user>
+
+<app-pagination
+  *ngIf="fetchedUsersData?.length > 0"
+  (prev)="onPrev()"
+  (next)="onNext()"
+></app-pagination>
